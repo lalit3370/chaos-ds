@@ -1,18 +1,69 @@
-# React + Vite
+# Chaos DS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A token-driven design system built with React, SCSS, and Storybook.
 
-Currently, two official plugins are available:
+This project focuses on **consistency, constraints, and scalability** rather than visual experimentation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Design Principles
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### 1. Token-first
+All visual decisions are defined as design tokens.
+Components never consume raw values directly.
 
-Note: This will impact Vite dev & build performances.
+- Primitive tokens define raw values
+- Semantic tokens define intent
+- Components use semantic tokens only
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Constrained APIs
+Components expose a **small, opinionated API**.
+
+If a prop cannot be mapped to a token, it does not exist.
+
+This prevents visual drift and enforces consistency.
+
+---
+
+### 3. No escape hatches
+- No `style` props
+- No arbitrary `className`
+- No ad-hoc overrides
+
+Consistency is enforced at the component boundary.
+
+---
+
+### 4. Storybook as documentation
+Storybook is treated as the primary interface for:
+- Component usage
+- Token visualization
+- Theme validation
+
+There is no separate demo app.
+
+---
+
+### 5. Theme support via tokens
+Light and dark themes are implemented by swapping CSS variables.
+Components remain unchanged.
+
+---
+
+## Tech Stack
+- React
+- SCSS
+- CSS Variables
+- Storybook (Vite)
+- Vitest + a11y addon
+
+---
+
+## Non-goals
+- Pixel-perfect marketing UI
+- Highly customizable components
+- Tailwind-style utility APIs
+
+This system prioritizes **maintainability over flexibility**.
