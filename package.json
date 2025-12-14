@@ -5,13 +5,11 @@
   "type": "module",
   "homepage": "https://projects.lalitkumar.dev",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "yarn storybook",
     "lint": "eslint .",
-    "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d storybook-static"
   },
   "dependencies": {
     "react": "^19.2.0",
