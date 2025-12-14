@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "deploy": "gh-pages -d storybook-static"
+    "deploy": "npm run build-storybook && gh-pages -d storybook-static"
   },
   "dependencies": {
     "react": "^19.2.0",
