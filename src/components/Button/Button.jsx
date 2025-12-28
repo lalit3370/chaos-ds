@@ -3,7 +3,7 @@ import './Button.scss';
 const VARIANTS = ['primary', 'secondary', 'danger'];
 const SIZES = ['sm', 'md', 'lg'];
 
-export function Button({
+function Button({
   variant = 'primary',
   size = 'md',
   disabled = false,
@@ -39,3 +39,5 @@ export function Button({
     </button>
   );
 }
+
+export default Button;

@@ -15,8 +15,8 @@ const ColorBlock = ({ name, value }) => (
       }}
     />
     <div style={{ marginTop: 8 }}>
-      <strong>{name}</strong>
-      <div style={{ fontSize: 12, opacity: 0.7 }}>{value}</div>
+      <strong style={{ fontSize: 'var(--font-size-md)' }}>{name}</strong>
+      <div style={{ fontSize: 'var(--font-size-sm)' }}>{value}</div>
     </div>
   </div>
 );

@@ -1,0 +1,47 @@
+
+button {
+  margin: 4px;
+}
+.toast-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.toast {
+  padding: 1rem;
+  color: var(--color-action-danger-text);
+  animation: slide 1s;
+  border-radius: var(--radius-lg);
+  margin: 1rem;
+}
+.success {
+  background: var(--color-action-success-bg);
+  color: var(--color-action-success-text);
+}
+.information {
+  background: var(--color-action-primary-bg);
+  color: var(--color-action-primary-text);
+}
+.warning {
+  background: var(--color-action-warning-bg);
+  color: var(--color-action-warning-text);
+}
+.error {
+  background: var(--color-action-danger-bg);
+  color: var(--color-action-danger-text);
+}
+.close {
+  // position: absolute;
+  // right: 10px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

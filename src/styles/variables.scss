@@ -6,22 +6,37 @@
   --color-bg-surface: #ffffff;
   --color-bg-muted: #f5f6f8;
   --color-bg-hover: #e6e8ec;
+  --color-bg-disabled: #e6e8ec;
 
-  --color-text-primary: #1e2026;
+  --color-text-primary: #0f1013;
   --color-text-secondary: #424651;
+  --color-text-tertiary: #7a808f;
   --color-text-inverse: #ffffff;
+  --color-text-disabled: #9ca0ab;
 
   --color-border-default: #e6e8ec;
+  --color-border-muted: #f5f6f8;
+  --color-border-strong: #d0d5dc;
 
   --color-action-primary-bg: #8fd9b9;
   --color-action-primary-bg-hover: #74c1a1;
-  --color-action-primary-text: #1e2026;
+  --color-action-primary-text: #0f1013;
 
   --color-action-danger-bg: #dc2626;
+  --color-action-danger-bg-hover: #7f1d1d;
   --color-action-danger-text: #ffffff;
 
   --color-action-success-bg: #22c55e;
+  --color-action-success-bg-hover: #15803d;
   --color-action-success-text: #ffffff;
+
+  --color-action-warning-bg: #f59e0b;
+  --color-action-warning-bg-hover: #d97706;
+  --color-action-warning-text: #0f1013;
+
+  --color-action-info-bg: #3b82f6;
+  --color-action-info-bg-hover: #1e40af;
+  --color-action-info-text: #ffffff;
 
   /* =========================
      Spacing
